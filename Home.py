@@ -7,6 +7,12 @@ st.markdown("""# This is a header
 ## This is a sub header
 This is text""")
 
+
+my_secret = st.secrets["api_key"]
+
+st.write("My secret is:", my_secret)
+
+
 df = pd.DataFrame({
     'first column': list(range(1, 11)),
     'second column': np.arange(10, 101, 10)
